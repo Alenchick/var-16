@@ -1,0 +1,10 @@
+for i in range(100000):
+    n=(bin(i))[2:]
+    if n.count('1')%2==0:
+        n+='01'
+    else: 
+        n+='10'
+    r=int(n, 2)
+    if r > 62:
+        print(r)
+        break
