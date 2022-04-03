@@ -1,0 +1,12 @@
+qwe='PIKAHY'
+s=[]
+k=0
+for a in qwe:
+    for b in qwe:
+        for c in qwe:
+            for d in qwe:
+                for e in qwe:
+                    if (a+b+c+d+e).count('Y')==2 or (a+b+c+d+e).count('Y')>2:
+                        s.append(a+b+c+d+e)
+                        k+=1
+print(k)
